@@ -1,4 +1,9 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* common style */
+*{
+    font-family: 'Poppins', sans-serif;
+}
 
 /* header style start */
 header{
@@ -15,7 +20,7 @@ header{
     margin-right: 50px;
 }
 .banner-description h1{
-    font-size: 4em;
+    font-size: 3em;
     color: white;
 }
 .banner-description a{
@@ -42,7 +47,9 @@ header{
 .banner-image img:hover{
     transform: rotate(20deg);
 }
-/* main section start */
+/* headr style end */
+
+/* first section start */
 section{
     margin: 80px 100px 100px 100px;
 }
@@ -59,6 +66,81 @@ section{
 .player img{
     width: 300px;
     height: 256px;
+}
+/* first section end */
+
+/* second section start */
+.information{
+display: flex;
+justify-content: center;
+}
+.player-information{
+    padding-top: 60px;
+}
+.player-information a{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 20px;
+}
+.player-image img{
+    height: 427px;
+    width: 567px;
+}
+/* second section end */
+
+/* extra section start */
+.section1{
+    width: 50%;
+}
+.section2{
+    width: 50%;
+    padding-left: 200px;
+    margin-left: 50x;
+
+}
+.extra-section{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.more{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.more ul li{
+    list-style: none;
+}
+.more ul li a{
+    text-decoration: none;
+    color: black;
+}
+.form input{
+    padding: 10px 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.055);
+}
+.form button{
+    padding: 10px 25px;
+    margin: 10px 0;
+    border-radius: 25px;
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.055);
+
+}
+/* extra section end */
+/* footer start */
+footer{
+    margin-bottom: 100px;
+}
+.football{
+    text-align: center;
+}
+.social-media{
+    text-align: center;
+}
+.football img{
+    width: 484px;
+    height: 110px;
 }
 /* media query start */
 @media only screen and (max-width:668px) {
@@ -94,6 +176,31 @@ section{
     .player{
         margin: 10px 0;
     }
+    .player-image img{
+        height: 248px;
+        width: 328px;
+        margin: 10px;
+    }
+    /* extra section */
+
+    .information{
+        flex-wrap: wrap;
+    }
+    .extra-section{
+        flex-wrap: wrap;
+    }
+    .more{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section2{
+        margin-right: 250px;
+    }
+    .football img{
+        margin-top: 30px;
+        width: 275px;
+        height: 65px;
+    }
+
 
     
 }
