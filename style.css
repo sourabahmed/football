@@ -138,13 +138,17 @@ footer{
 .social-media{
     text-align: center;
 }
+.social-media a{
+    font-size: 30px;
+    margin: 0 20px;
+}
 .football img{
     width: 484px;
     height: 110px;
 }
 /* media query start */
 @media only screen and (max-width:668px) {
-    .body{
+    body{
         margin: 0;
     }
     .banner-description h1{
@@ -185,22 +189,46 @@ footer{
 
     .information{
         flex-wrap: wrap;
+        margin: 10px;
     }
     .extra-section{
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
     .more{
         grid-template-columns: repeat(1, 1fr);
     }
+    .section1{
+        margin: 0px;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
     .section2{
-        margin-right: 250px;
+        margin: 0px;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    footer{
+        margin-bottom: 50px;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .football{
+        text-align: center;
+    }
+    .social-media{
+        text-align: center;
+    }
+    .social-media a{
+        font-size: 20px;
+        margin: 0 10px;
     }
     .football img{
-        margin-top: 30px;
-        width: 275px;
-        height: 65px;
-    }
-
-
-    
+        width: 205px;
+        height: 55px;
+    }    
 }
